@@ -5,24 +5,34 @@
 <table> 
   <tr>
     <td align="center">
-      <a href="https://github.com/AnaCarolinaPGDO">
-        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/50124714?v=4" width="100px" alt="Foto Perfil"/>
+      <a href="https://github.com/rafaelfreire3107">
+        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/177573677?v=44" width="100px" alt="Foto Perfil"/>
         <br />
         <sub>
-          <b>Ana Carolina</b>
+          <b>Rafael Freire</b>
         </sub>
       </a>
-      <a href="https://github.com/AnaCarolinaPGDO"></a>
+      <a href="https://github.com/rafaelfreire3107"></a>
     </td>
     <td align="center">
-      <a href="https://github.com/marcos-medeirosx">
-        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/169625108?v=4" width="100px" alt="Foto Perfil"/>
+      <a href="https://github.com/PatrickRamosTI">
+        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/177888812?v=4" width="100px" alt="Foto Perfil"/>
         <br />
         <sub>
-          <b>Marcos Medeiros</b>
+          <b>Patrick Ramos</b>
+        </sub>
+      </a>
+      <a href="https://github.com/PatrickRamosTI"></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/JoaoGLinhares">
+        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/177574425?v=4" width="100px" alt="Foto Perfil"/>
+        <br />
+        <sub>
+          <b>João Linhares</b>
         </sub>
       </a> 
-      <a href="https://github.com/marcos-medeirosx"></a>
+      <a href="https://github.com/JoaoGLinhares"></a>
     </td>
     <td align="center">
       <a href="https://github.com/rafasalmeron">
@@ -35,35 +45,24 @@
       <a href="https://github.com/rafasalmeron"></a>
     </td>
     <td align="center">
-      <a href="https://github.com/delmiraugusto">
-        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/169544715?v=4" width="100px" alt="Foto Perfil"/>
+      <a href="">
+        <img style="border-radius: 50%" src="" width="100px" alt="Foto Perfil"/>
         <br />
         <sub>
-          <b>Delmir Augusto</b>
+          <b>Dani Karius</b>
         </sub>
       </a> 
-      <a href="https://github.com/delmiraugusto"></a>
+      <a href=""></a>
     </td>
     <td align="center">
-      <a href="https://github.com/GabrielaCoutoD">
-        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/177572664?v=4" width="100px" alt="Foto Perfil"/>
+      <a href="">
+        <img style="border-radius: 50%" src="" width="100px" alt="Foto Perfil"/>
         <br />
         <sub>
-          <b>Gabriela Couto</b>
+          <b>Daiane</b>
         </sub>
       </a> 
-      <a href="https://github.com/GabrielaCoutoD"></a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/ricardo-lopes130">
-        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/177360954?v=4" width="100px" alt="Foto Perfil"/>
-        <br />
-        <sub>
-          <b>Ricardo Lopes</b>
-        </sub>
-      </a> 
-      <a href="https://github.com/ricardo-lopes130"></a>
-    </td>
+      <a href=""></a>
   </tr>
 </table>
 
