@@ -1,0 +1,45 @@
+body{
+    background-color: rgba(255,253,232,1);
+}
+.conteiner{
+    color: black;
+}
+.carousel-inner > img{
+    height: 200px;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.card{
+    background-color: rgba(255,253,232,1);
+}
+.cardDetalhes{
+    display: flex;
+}
+
+.logo{
+    height: 60px;
+}
+
+#navBar{
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+}
+footer{
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%)
+}
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Isso ajuda a manter a consistência visual */
+    height: 100%; /* Faz com que o card ocupe toda a altura disponível */
+}
