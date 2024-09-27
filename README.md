@@ -55,14 +55,14 @@
       <a href=""></a>
     </td>
     <td align="center">
-      <a href="">
-        <img style="border-radius: 50%" src="" width="100px" alt="Foto Perfil"/>
+      <a href="https://github.com/daianefersan">
+        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/177891414?v=4" width="100px" alt="Foto Perfil"/>
         <br />
         <sub>
           <b>Daiane</b>
         </sub>
       </a> 
-      <a href=""></a>
+      <a href="https://github.com/daianefersan"></a>
   </tr>
 </table>
 
