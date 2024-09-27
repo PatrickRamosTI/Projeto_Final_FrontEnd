@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.logo {
+    height: 60px;
+}
+
+#navBar {
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+}
+
+footer {
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#carrinho {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.imagem-produto {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.info-produto h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info-produto p {
+    margin: 5px 0;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
