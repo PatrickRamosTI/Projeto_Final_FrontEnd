@@ -121,7 +121,7 @@ function cadastrar() {
     confirmSenha.value = '';
 
     setTimeout(() => {
-      window.location.href = '../home/home.html';
+      window.location.href = '../login/login.html';
     }, 2000);
   } else {
     msgError.setAttribute('style', 'display: block');
