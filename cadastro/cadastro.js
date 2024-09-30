@@ -84,7 +84,7 @@ senha.addEventListener('keyup', () => {
 confirmSenha.addEventListener('keyup', () => {
   if (senha.value != confirmSenha.value) {
     labelConfirmSenha.setAttribute('style', 'color: red')
-    labelConfirmSenha.innerHTML = 'Confirmar Senha *As senhas não conferem'
+    labelConfirmSenha.innerHTML = 'Confirmar Senha, as senhas não conferem'
     confirmSenha.setAttribute('style', 'border-color: red')
     validConfirmSenha = false
   } else {
