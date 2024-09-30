@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #161616;
+    margin: 0;
+    padding-top: 80px;
+    line-height: var(--bs-body-line-height);
+    color: #000;
+}
+
+.logo {
+    height: 60px;
+}
+
+#navBar{
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+    border-radius: 5px;
+}
+
+.imgFooter{
+    height: 30px;
+}
+
+footer{
+    border-radius: 5px;
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1), rgba(224,170,56,1), rgba(255,253,232,1) 100%); /* Ponto e vírgula adicionado aqui */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#carrinho {
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
+}
+
+
+.produto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.imagem-produto {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.info-produto h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info-produto p {
+    margin: 5px 0;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}

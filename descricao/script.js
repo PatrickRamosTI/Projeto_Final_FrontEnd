@@ -53,4 +53,3 @@ function renderizarDetalhes() {
 }
 
 document.addEventListener('DOMContentLoaded', renderizarDetalhes);
-console.log(produtos)
