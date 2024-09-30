@@ -45,3 +45,16 @@ body {
     background-color: hsla(0, 0%, 100%, 0.9) !important;
     backdrop-filter: saturate(200%) blur(25px);
 }
+.card-body{
+    display: flex;
+    justify-content: left;
+    align-items: last baseline;
+    margin: 0;
+    padding: 0;
+}
+.Cdt{
+    text-align: center;
+    padding: 50px;
+    font-family: "Jacquarda Bastarda 9", serif;
+   font-size: 300%;
+}
