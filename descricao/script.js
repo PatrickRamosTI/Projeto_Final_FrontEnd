@@ -43,6 +43,7 @@ function renderizarDetalhes() {
                         <button class="btn btn-primary" onclick="calcularFrete()">Calcular Frete</button>
                         <div class="mt-3" id="resultadoFrete"></div>
                         <a href="#" class="btn btn-success mt-2">Adicionar ao Carrinho</a>
+                        onclick="adicionarAoCarrinho(${produto.id})
                     </div>
                 </div>
             </div>
