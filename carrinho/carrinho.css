@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding-top: 80px;
     line-height: var(--bs-body-line-height);
-    color: #000000;
+    color:  #161616;
     display: flex;
     flex-direction: column;
 }
