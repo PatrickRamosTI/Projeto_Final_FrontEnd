@@ -17,7 +17,7 @@ function renderizarDetalhes() {
                         <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
                     </div>
                     <div class="card" style="width: 8rem;">
-                        <img src="Untitled.jpeg" class="card-img-top" alt="Imagem 2">
+                        <img src="../assets/cartas/Untitled.jpeg" class="card-img-top" alt="Imagem 2">
                     </div>
                 </div>
 
