@@ -39,7 +39,7 @@ body {
 footer {
     border-radius: 5px;
     margin-top: 20px;
-    position: relative;
+    position:fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
