@@ -7,6 +7,8 @@ body{
     background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
     border-radius: 5px;
     margin-bottom: 15px;
+    display: flex;
+
 }
 
 .carousel-inner > img{
