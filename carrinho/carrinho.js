@@ -28,7 +28,11 @@ function renderizarCarrinho() {
     const carrinhoContainer = document.querySelector('#carrinho');
     carrinhoContainer.innerHTML = ''; 
 
-    if (carrinho.length === 0) {
+    // Adicionar título apenas uma vez, fora do loop
+    if (carrinho.length > 0) {
+        const tituloHTML = '<h2><b>Seu Carrinho de Compras</b></h2>';
+        carrinhoContainer.innerHTML = tituloHTML;
+    } else {
         carrinhoContainer.innerHTML = '<p>O carrinho está vazio.</p>';
         return;
     }
@@ -39,14 +43,13 @@ function renderizarCarrinho() {
         total += produto.preco;
 
         const produtoHTML = `
-            <h2><b>Seu Carrinho de Compras</b></h2>
             <div class="produto-caixa">
                 <div class="produto">
                     <img src="${produto.imagem}" alt="${produto.nome}" class="imagem-produto">
                     <div class="info-produto">
                         <h3>${produto.nome}</h3>
                         <p>R$ ${produto.preco.toFixed(2)}</p>
-                        <button onclick="removerDoCarrinho(${produto.id})">Remover</button>
+                        <button class="remover-produto" onclick="removerDoCarrinho(${produto.id})">Remover</button>
                     </div>
                 </div>
             </div>
@@ -58,15 +61,18 @@ function renderizarCarrinho() {
     totalContainer.innerHTML = `
         <div>
             <p>Total: R$ ${total.toFixed(2)}</p>
-            <button onclick="finalizarCompra()" class="finalizar-compra">Finalizar Compra</button>
+            <button class="finalizar-compra" onClick="finalizarCompra()">Finalizar Compra</button>
         </div>
     `;
 }
 
 function finalizarCompra() {
-    alert('Compra finalizada com sucesso!');
-    localStorage.removeItem('carrinho');
-    renderizarCarrinho();
+    
+    if (confirm('Deseja realmente finalizar a compra?')) {
+        localStorage.removeItem('carrinho');
+        alert('Compra finalizada com sucesso!');
+        renderizarCarrinho();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', renderizarCarrinho);

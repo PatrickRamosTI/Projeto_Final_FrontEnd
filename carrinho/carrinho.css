@@ -75,12 +75,12 @@ footer a.text-body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; 
+    justify-content: center;
     margin-top: 20px;
     color: white;
 }
 
-button.finalizar-compra, button.removerDoCarrinho {
+button.finalizar-compra, button.remover-produto {
     padding: 10px 20px;
     background-color: #0077cc;
     color: white;
