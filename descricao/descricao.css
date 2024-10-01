@@ -9,7 +9,7 @@ body {
 .card {
     margin-bottom: 10px;
     border: none;
-    background-color: #161616; /* mantido do seu CSS */
+    background-color: #161616; 
 }
 
 .text-white {
