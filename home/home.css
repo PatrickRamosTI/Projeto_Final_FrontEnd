@@ -8,12 +8,12 @@ body{
     border-radius: 5px;
     margin-bottom: 15px;
     display: flex;
-
 }
 
 .carousel-inner{
-    margin-top: 200px;
+    margin-top: 150px;
     width: 100%;
+    padding: 0 3vw;
 }
 
 
@@ -28,6 +28,7 @@ body{
     padding-top: 50px;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -46,8 +47,11 @@ body{
     background-color: rgba(255,253,232,1);
 }
 
+#logo{
+    width: 60px;
+}
 .logo{
-    height: 60px;
+    width: 30px;
 }
 
 #navBar{
