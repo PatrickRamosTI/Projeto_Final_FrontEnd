@@ -4,7 +4,6 @@ function adicionarAoCarrinho(id) {
     const produtoExistente = carrinho.find(p => p.id === id);
     if (!produtoExistente) {
         const produto = produtos.find(p => p.id === id);
-        console.log(produto);
         carrinho.push(produto);
         localStorage.setItem('carrinho', JSON.stringify(carrinho));
         
