@@ -66,3 +66,35 @@ input::placeholder {
 .login-btn:hover {
     background: #FFA500;
 }
+
+.conteiner{
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+#navBar{
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+    border-radius: 5px;
+}
+
+.logo{
+    height: 60px;
+}
+
+.imgFooter{
+    height: 30px;
+}
+
+footer{
+    border-radius: 5px;
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

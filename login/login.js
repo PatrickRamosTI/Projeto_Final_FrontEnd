@@ -14,8 +14,9 @@ function entrar() {
     window.alert('Verifique seus dados e tente novamente.');
   }
 }
-
 function criarConta() {
-  window.location.href = '../cadastro/cadastro.html';
+  window.open("http://127.0.0.1:5501/cadastro/cadastro.html");
 }
-
+function irParaHome() {
+  window.open("http://127.0.0.1:5501/home/home.html");
+}
