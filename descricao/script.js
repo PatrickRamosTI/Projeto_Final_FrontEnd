@@ -17,7 +17,7 @@ function renderizarDetalhes() {
                         <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
                     </div>
                     <div class="card" style="width: 8rem;">
-                        <img src="Untitled.jpeg" class="card-img-top" alt="Imagem 2">
+                        <img src="../assets/cartas/Untitled.jpeg" class="card-img-top" alt="Imagem 2">
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@ function renderizarDetalhes() {
                         </div>
                         <button class="btn btn-primary" onclick="calcularFrete()">Calcular Frete</button>
                         <div class="mt-3" id="resultadoFrete"></div>
-                        <a href="#" class="btn btn-success mt-2">Adicionar ao Carrinho</a>
+                        <button onclick="adicionarAoCarrinho(${produto.id})" class="btn btn-success mt-2">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
