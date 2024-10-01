@@ -1,10 +1,48 @@
-body{
-    background-color: rgba(255,253,232,1);
+body {
+    background-color: #161616;
 }
-.conteiner{
-    color: black;
+
+#navBar, footer {
+    background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(189, 189, 189, 1) 50%, rgba(224, 170, 56, 1) 100%);
 }
-.carousel-inner > img{
+
+.card {
+    margin-bottom: 10px;
+    border: none;
+    background-color: #161616; /* mantido do seu CSS */
+}
+
+.text-white {
+    color: white !important;
+}
+
+.equal-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.card-container {
+    background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(189, 189, 189, 1) 50%, rgba(224, 170, 56, 1) 100%);
+    padding: 20px 0;
+}
+
+.full-img-card {
+    overflow: hidden;
+}
+
+.full-img-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.conteiner {
+    color: #161616;
+}
+
+.carousel-inner > img {
     height: 200px;
     width: 100%;
 }
@@ -18,28 +56,11 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
-.card{
-    background-color: rgba(255,253,232,1);
-}
-.cardDetalhes{
+
+.cardDetalhes {
     display: flex;
 }
 
-.logo{
-    height: 60px;
-}
-
-#navBar{
-    background: rgb(224,170,56);
-    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
-}
-footer{
-    background: rgb(224,170,56);
-    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%)
-}
-.equal-height {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Isso ajuda a manter a consistência visual */
-    height: 100%; /* Faz com que o card ocupe toda a altura disponível */
+.logo {
+    height: 80px;
 }
