@@ -12,20 +12,20 @@
     <script>
         function calcularFrete() {
             const quantidade = document.getElementById('quantity').value;
-            const frete = (quantidade * 10).toFixed(2); // Exemplo: R$10,00 por unidade
+            const frete = (quantidade * 10).toFixed(2); 
             document.getElementById('resultadoFrete').innerText = `Frete: R$ ${frete}`;
         }
     </script>
     <style>
         body {
-            background-color: black;
+            background-color: #161616;
         }
         #navBar, footer {
-            background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1), rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+            background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(189, 189, 189, 1) 50%, rgba(224, 170, 56, 1) 100%);
         }
         .card {
             margin-bottom: 10px;
-            border: none; /* Remove bordas para um visual mais limpo */
+            border: none; 
         }
         .text-white {
             color: white !important;
@@ -34,17 +34,16 @@
             height: 100%;
         }
         .card-container {
-            background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1), rgba(224,170,56,1), rgba(255,253,232,1) 100%);
-            padding: 20px 0; /* Adiciona espaço ao redor dos cards */
-            width: 100%;
+            background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(189, 189, 189, 1) 50%, rgba(224, 170, 56, 1) 100%);
+            padding: 20px 0; 
         }
         .full-img-card {
-            overflow: hidden; /* Para evitar que a imagem exceda o card */
+            overflow: hidden; 
         }
         .full-img-card img {
             width: 100%;
-            height: auto; /* Faz a imagem ocupar todo o card */
-            display: block; /* Remove o espaço embaixo da imagem */
+            height: auto; 
+            display: block; 
         }
     </style>
 </head>
@@ -95,7 +94,7 @@
         <div class="row mt-4">
             <div class="col-md-3 mb-4">
                 <div class="card" style="background-color: rgba(255,253,232,1);">
-                    <img src="../assets/cartas/cadeirada.jpeg" class="card-img-top" alt="Produto 1">
+                    <img src="../assets/cartas/cadirada.jpeg" class="card-img-top" alt="Produto 1">
                     <div class="card-body">
                         <h5 class="card-title">Produto 1</h5>
                         <p class="card-text">R$ 1.000,00</p>
@@ -105,7 +104,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card" style="background-color: rgba(255,253,232,1);">
-                    <img src="../assets/cartas/nemri.jpeg" class="card-img-top" alt="Produto 2">
+                    <img src="../assets/cartas/nemi.jpeg" class="card-img-top" alt="Produto 2">
                     <div class="card-body">
                         <h5 class="card-title">Produto 2</h5>
                         <p class="card-text">R$ 500,00</p>
@@ -115,7 +114,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card" style="background-color: rgba(255,253,232,1);">
-                    <img src="../assets/cartas/xandao.jpeg" class="card-img-top" alt="Produto 3">
+                    <img src="../assets/cartas/xadao.jpeg" class="card-img-top" alt="Produto 3">
                     <div class="card-body">
                         <h5 class="card-title">Produto 3</h5>
                         <p class="card-text">R$ 50.000,00</p>
@@ -125,7 +124,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card" style="background-color: rgba(255,253,232,1);">
-                    <img src="../assets/cartas/terca.jpeg" class="card-img-top" alt="Produto 4">
+                    <img src="../assets/cartas/teca.jpeg" class="card-img-top" alt="Produto 4">
                     <div class="card-body">
                         <h5 class="card-title">Produto 4</h5>
                         <p class="card-text">R$ 1500,00</p>
@@ -187,7 +186,7 @@
 </footer>
 
 <script src="../produtos/produtos.js"></script>
+<script src="../carrinho/carrinho.js"></script>
 <script src="./script.js" defer></script>
 </body>
 </html>
-
