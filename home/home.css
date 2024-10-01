@@ -46,6 +46,10 @@ body{
 .card{
     background-color: rgba(255,253,232,1);
 }
+.card:hover{
+    background: rgb(224,170,56);
+    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+}
 
 #logo{
     width: 60px;
@@ -68,4 +72,13 @@ footer{
     border-radius: 5px;
     background: rgb(224,170,56);
     background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%)
+}
+
+.aCard .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aCard .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
