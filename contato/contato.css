@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(255, 253, 232, 1), rgba(224, 170, 56, 1), rgba(255, 253, 232, 1) 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(255, 253, 232, 1), rgba(224, 170, 56, 1), rgba(255, 253, 232, 1) 100%);
+    padding: 1rem;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #173487;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-top: 1.5rem;
+    background-color: #1c1f4f;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.form-label {
+    color: #ffffff;
+}
+
+.form-control {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ffffff;
+}
+
+.contatoEnviar {
+    background-color: #e0aa38;
+    border: 0.5px solid;
+    padding: 10px;
+}
+
+footer {
+    background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(255, 253, 232, 1), rgba(224, 170, 56, 1), rgba(255, 253, 232, 1) 100%);
+    color: #000000;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 425px) {
+    main {
+        padding: 30px;
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}

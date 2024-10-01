@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Yu-Gi-Oh - Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/klipartz.com.png">
+    <link rel="stylesheet" href="../contato/contato.css">
+    <meta name="title" content="Yu-Gi-Oh - Contato">
+    <meta name="description" content="Entre em contato com a equipe do e-commerce Yu-Gi-Oh. Estamos prontos para atender suas dúvidas e sugestões.">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html" aria-label="Ir para a página inicial">Início</a></li>
+                <li><a href="../cadastro/cadastro.html" aria-label="Ir para a página de cadastro">Cadastre-se</a></li>
+                <li><a href="../carrinho/carrinho.html" aria-label="Ir para o carrinho">Carrinho</a></li>
+                <li><a href="../login/login.html" aria-label="Ir para a página de contato">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="contato-title">
+            <h1 id="contato-title">Entre em contato com a equipe Yu-Gi-Oh!</h1>
+            <form action="#" method="POST">
+                <div id="nome">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div id="email">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mensagem">
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="contatoEnviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-commerce Yu-Gi-Oh! Todos os direitos reservados.</p>
+    </footer>
+    <script src="../contato/contato.html"></script>
+</body>
+</html>
