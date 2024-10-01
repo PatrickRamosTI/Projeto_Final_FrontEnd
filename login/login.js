@@ -16,6 +16,8 @@ function entrar() {
 }
 
 function criarConta() {
-  window.location.href = 'http://127.0.0.1:5501/cadastro/cadastro.html';
+  window.open("http://127.0.0.1:5501/cadastro/cadastro.html");
 }
-
+function irParaHome() {
+  window.open("http://127.0.0.1:5501/home/home.html");
+}
