@@ -1,48 +1,62 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #161616;
     margin: 0;
     padding-top: 80px;
     line-height: var(--bs-body-line-height);
-    color: #000;
+    color:  #161616;
+    display: flex;
+    flex-direction: column;
+}
+
+#carrinho {
+    flex: 1;
+    background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(189, 189, 189, 1) 50%, rgba(224, 170, 56, 1) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
 }
 
 .logo {
     height: 60px;
 }
 
-#navBar{
-    background: rgb(224,170,56);
-    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
+#navBar {
+    background: linear-gradient(90deg, rgba(224, 170, 56, 1) 0%, rgba(189, 189, 189, 1) 50%, rgba(224, 170, 56, 1) 100%);
     border-radius: 5px;
 }
 
-.imgFooter{
+.imgFooter {
     height: 30px;
 }
 
-footer{
+
+footer {
     border-radius: 5px;
-    background: rgb(224,170,56);
-    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1), rgba(224,170,56,1), rgba(255,253,232,1) 100%); /* Ponto e vírgula adicionado aqui */
-    padding: 20px;
     margin-top: 20px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(224, 170, 56, 1);
+
 }
 
-#carrinho {
-    background: linear-gradient(90deg, rgba(224,170,56,1) 0%, rgba(255,253,232,1),rgba(224,170,56,1), rgba(255,253,232,1) 100%);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
+footer a.text-body {
+    color: white !important;
 }
-
 
 .produto {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     padding: 10px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #333333;
 }
 
 .imagem-produto {
@@ -66,7 +80,7 @@ footer{
 
 button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #0077cc;
     color: white;
     border: none;
     border-radius: 5px;
@@ -74,5 +88,5 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #005fa3;
 }
