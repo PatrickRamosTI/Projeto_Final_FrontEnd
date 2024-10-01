@@ -17,6 +17,9 @@ body{
 }
 
 
+#produtos{
+    height: 100%;
+}
 .container-fluid{
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +29,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 .carousel-item {
     height: 65vh;

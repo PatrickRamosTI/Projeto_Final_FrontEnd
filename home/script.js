@@ -5,7 +5,7 @@ function renderizarProdutos() {
 
     produtos.forEach(produto => {
         const card = `
-            <a href="/descricao/descricao.html?id=${produto.id}">
+            <a class="aCard" href="/descricao/descricao.html?id=${produto.id}">
                 <div class="card" style="width: 18rem;">
                     <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
                     <div class="card-body">
