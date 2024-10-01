@@ -4,14 +4,23 @@ function adicionarAoCarrinho(id) {
     const produtoExistente = carrinho.find(p => p.id === id);
     if (!produtoExistente) {
         const produto = produtos.find(p => p.id === id);
-        console.log(produto)
-        carrinho.push(produto); // Adicionando o produto completo
+        console.log(produto);
+        carrinho.push(produto);
         localStorage.setItem('carrinho', JSON.stringify(carrinho));
         
         alert('Produto adicionado ao carrinho!');
     } else {
         alert('Produto já está no carrinho.');
     }
+}
+
+function removerDoCarrinho(id) {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    carrinho = carrinho.filter(p => p.id !== id);
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    renderizarCarrinho();
 }
 
 function renderizarCarrinho() {
@@ -31,14 +40,12 @@ function renderizarCarrinho() {
 
         const produtoHTML = `
             <h2><b>Seu Carrinho de Compras</b></h2>
-
             <div class="produto-caixa">
                 <div class="produto">
                     <img src="${produto.imagem}" alt="${produto.nome}" class="imagem-produto">
                     <div class="info-produto">
                         <h3>${produto.nome}</h3>
-                       
-                        <p>${produto.preco.toFixed(2)}</p>
+                        <p>R$ ${produto.preco.toFixed(2)}</p>
                         <button onclick="removerDoCarrinho(${produto.id})">Remover</button>
                     </div>
                 </div>
@@ -46,13 +53,20 @@ function renderizarCarrinho() {
         `;
         carrinhoContainer.innerHTML += produtoHTML;
     });
+
     const totalContainer = document.querySelector('#total');
     totalContainer.innerHTML = `
         <div>
-            <p>Total: ${total}</p>
-            <button onClick="finalizarCompra()" class="finalizar-compra">Finalizar Compra</button>
+            <p>Total: R$ ${total.toFixed(2)}</p>
+            <button onclick="finalizarCompra()" class="finalizar-compra">Finalizar Compra</button>
         </div>
-    `;      
+    `;
+}
+
+function finalizarCompra() {
+    alert('Compra finalizada com sucesso!');
+    localStorage.removeItem('carrinho');
+    renderizarCarrinho();
 }
 
 document.addEventListener('DOMContentLoaded', renderizarCarrinho);
