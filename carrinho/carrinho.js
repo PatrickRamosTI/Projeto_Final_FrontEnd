@@ -13,12 +13,25 @@ function adicionarAoCarrinho(id) {
     }
 }
 
+function removerDoCarrinho(id) {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    carrinho = carrinho.filter(p => p.id !== id);
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    renderizarCarrinho();
+}
+
 function renderizarCarrinho() {
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     const carrinhoContainer = document.querySelector('#carrinho');
     carrinhoContainer.innerHTML = ''; 
 
-    if (carrinho.length === 0) {
+    // Adicionar título apenas uma vez, fora do loop
+    if (carrinho.length > 0) {
+        const tituloHTML = '<h2><b>Seu Carrinho de Compras</b></h2>';
+        carrinhoContainer.innerHTML = tituloHTML;
+    } else {
         carrinhoContainer.innerHTML = '<p>O carrinho está vazio.</p>';
         return;
     }
@@ -29,29 +42,36 @@ function renderizarCarrinho() {
         total += produto.preco;
 
         const produtoHTML = `
-            <h2><b>Seu Carrinho de Compras</b></h2>
-
             <div class="produto-caixa">
                 <div class="produto">
                     <img src="${produto.imagem}" alt="${produto.nome}" class="imagem-produto">
                     <div class="info-produto">
                         <h3>${produto.nome}</h3>
-                       
-                        <p>${produto.preco.toFixed(2)}</p>
-                        <button onclick="removerDoCarrinho(${produto.id})">Remover</button>
+                        <p>R$ ${produto.preco.toFixed(2)}</p>
+                        <button class="remover-produto" onclick="removerDoCarrinho(${produto.id})">Remover</button>
                     </div>
                 </div>
             </div>
         `;
         carrinhoContainer.innerHTML += produtoHTML;
     });
+
     const totalContainer = document.querySelector('#total');
     totalContainer.innerHTML = `
         <div>
-            <p>Total: ${total}</p>
-            <button onClick="finalizarCompra()" class="finalizar-compra">Finalizar Compra</button>
+            <p>Total: R$ ${total.toFixed(2)}</p>
+            <button class="finalizar-compra" onClick="finalizarCompra()">Finalizar Compra</button>
         </div>
-    `;      
+    `;
+}
+
+function finalizarCompra() {
+    
+    if (confirm('Deseja realmente finalizar a compra?')) {
+        localStorage.removeItem('carrinho');
+        alert('Compra finalizada com sucesso!');
+        renderizarCarrinho();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', renderizarCarrinho);

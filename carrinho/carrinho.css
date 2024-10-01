@@ -35,7 +35,6 @@ body {
     height: 30px;
 }
 
-
 footer {
     border-radius: 5px;
     margin-top: 20px;
@@ -44,7 +43,6 @@ footer {
     width: 100%;
     text-align: center;
     color: rgb(224, 170, 56, 1);
-
 }
 
 footer a.text-body {
@@ -73,20 +71,25 @@ footer a.text-body {
     margin: 5px 0;
 }
 
-.total {
-    text-align: center;
+#total {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
     margin-top: 20px;
+    color: white;
 }
 
-button {
+button.finalizar-compra, button.remover-produto {
     padding: 10px 20px;
     background-color: #0077cc;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-button:hover {
+button.finalizar-compra:hover, button.remover-produto:hover {
     background-color: #005fa3;
 }
