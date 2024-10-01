@@ -24,7 +24,7 @@ let msgSuccess = document.querySelector('#msgSuccess')
 nome.addEventListener('keyup', () => {
   if (nome.value.length <= 2) {
     labelNome.setAttribute('style', 'color: red')
-    labelNome.innerHTML = 'Nome *Insira no mínimo 3 caracteres'
+    labelNome.innerHTML = 'Insira no mínimo 3 caracteres'
     nome.setAttribute('style', 'border-color: red')
     validNome = false
   } else {
@@ -38,7 +38,7 @@ nome.addEventListener('keyup', () => {
 sobrenome.addEventListener('keyup', () => {
   if (sobrenome.value.length <= 4) {
     labelSobrenome.setAttribute('style', 'color: red')
-    labelSobrenome.innerHTML = 'Sobrenome *Insira no mínimo 5 caracteres'
+    labelSobrenome.innerHTML = 'Insira no mínimo 5 caracteres'
     sobrenome.setAttribute('style', 'border-color: red')
     validSobrenome = false
   } else {
@@ -55,7 +55,7 @@ email.addEventListener('keyup', () => {
 
   if (!regexEmail.test(email.value)) {
     labelEmail.setAttribute('style', 'color: red');
-    labelEmail.innerHTML = 'Email *Insira um email válido';
+    labelEmail.innerHTML = 'Insira um email válido';
     email.setAttribute('style', 'border-color: red');
     validEmail = false;
   } else {
@@ -70,7 +70,7 @@ email.addEventListener('keyup', () => {
 senha.addEventListener('keyup', () => {
   if (senha.value.length <= 5) {
     labelSenha.setAttribute('style', 'color: red')
-    labelSenha.innerHTML = 'Senha *Insira no mínimo 6 caracteres'
+    labelSenha.innerHTML = 'Insira no mínimo 6 caracteres'
     senha.setAttribute('style', 'border-color: red')
     validSenha = false
   } else {
@@ -84,7 +84,7 @@ senha.addEventListener('keyup', () => {
 confirmSenha.addEventListener('keyup', () => {
   if (senha.value != confirmSenha.value) {
     labelConfirmSenha.setAttribute('style', 'color: red')
-    labelConfirmSenha.innerHTML = 'Confirmar Senha *As senhas não conferem'
+    labelConfirmSenha.innerHTML = 'Confirmar Senha, as senhas não conferem'
     confirmSenha.setAttribute('style', 'border-color: red')
     validConfirmSenha = false
   } else {
